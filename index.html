@@ -422,18 +422,30 @@
         }
 
         .team-avatar {
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-            background: var(--team-avatar-bg);
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 12px;
-        }
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 14px;
+    padding: 2px;
+    background: linear-gradient(135deg, #315BD8, #60A5FA);
+    box-shadow: 0 8px 24px rgba(49,91,216,0.35);
+    transition: transform .25s ease;
+    flex-shrink: 0;
+}
+
+.team-avatar:hover {
+    transform: scale(1.06);
+}
+
+.team-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
 
         .team-name {
             font-size: 15px;
@@ -594,7 +606,7 @@
                     <span class="material-symbols-outlined">open_in_new</span>
                     Acessar Site PSICO
                 </a>
-                <a href="https://www.figma.com/design/3oOWxd28rKfPUSrdmEYwSE/Sem-t%C3%ADtulo?node-id=0-1&t=lEHc9n2AODBS7Igg-1" target="_blank" class="btn btn-secondary">
+                <a href="https://www.figma.com/design/KXAHvX5hQpijqfW9PI710b/Psico-site?node-id=0-1&p=f" target="_blank" class="btn btn-secondary">
                     <span class="material-symbols-outlined">design_services</span>
                     Protótipo no Figma
                 </a>
@@ -602,7 +614,7 @@
                     <span class="material-symbols-outlined">image</span>
                     Banner do Projeto
                 </a>
-                <a href="https://github.com/caiquecanavan" target="_blank" class="btn btn-outline">
+                <a href="https://github.com/MaickCruz/PSICO-site" target="_blank" class="btn btn-outline">
                     <i class="fa-brands fa-github"></i>
                     GitHub
                 </a>
@@ -673,7 +685,9 @@
                 
                 <!-- Caique -->
                 <div class="team-card">
-                    <div class="team-avatar">CM</div>
+                    <div class="team-avatar">
+                        <img src="Caique.jpeg" alt="Caique Canavan Medeiros">
+                    </div>
                     <div class="team-name">Caique Canavan Medeiros</div>
                     <div class="team-role">Desenvolvedor Front-end & Back-end</div>
                     <div class="team-links">
@@ -694,7 +708,9 @@
 
                 <!-- Lucas -->
                 <div class="team-card">
-                    <div class="team-avatar">LP</div>
+                    <div class="team-avatar">
+                        <img src="lucas.jpeg" alt="Lucas Proença">
+                    </div>
                     <div class="team-name">Lucas Proença</div>
                     <div class="team-role">Gestão do Projeto & Scrum Master</div>
                     <div class="team-links">
@@ -715,7 +731,9 @@
 
                 <!-- Gustavo -->
                 <div class="team-card">
-                    <div class="team-avatar">GU</div>
+                    <div class="team-avatar">
+                        <img src="gustavo.jpg" alt="Gustavo Uselis">
+                    </div>
                     <div class="team-name">Gustavo Uselis</div>
                     <div class="team-role">Consultor de Usabilidade</div>
                     <div class="team-links">
@@ -736,20 +754,22 @@
 
                 <!-- Matheus -->
                 <div class="team-card">
-                    <div class="team-avatar">MM</div>
+                    <div class="team-avatar">
+                        <img src="matheus.jpeg" alt="Matheus Magarian">
+                    </div>
                     <div class="team-name">Matheus Magarian</div>
                     <div class="team-role">Analista de Viabilidade & Requisitos</div>
                     <div class="team-links">
-                        <a href="#" class="team-link email" title="Email">
+                        <a href="matheusmagarian4@gmail.com" class="team-link email" title="Email">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
-                        <a href="#" class="team-link linkedin" title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/matheus-magarian-marques-b08617326?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="team-link linkedin" title="LinkedIn">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
-                        <a href="#" class="team-link github" title="GitHub">
+                        <a href="https://github.com/matheusmagarian4-sudo" class="team-link github" title="GitHub">
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <a href="#" class="team-link whatsapp" title="WhatsApp">
+                        <a href="https://wa.me/5515996371312" class="team-link whatsapp" title="WhatsApp">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
                     </div>
@@ -757,20 +777,22 @@
 
                 <!-- Thiago -->
                 <div class="team-card">
-                    <div class="team-avatar">TE</div>
+                    <div class="team-avatar">
+                        <img src="thiago.jpeg" alt="Thiago Eclis">
+                    </div>
                     <div class="team-name">Thiago Eclis</div>
                     <div class="team-role">Analista de Suporte & Manutenção</div>
                     <div class="team-links">
-                        <a href="#" class="team-link email" title="Email">
+                        <a href="thiago.eclisfacens@gmail.com" class="team-link email" title="Email">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
-                        <a href="#" class="team-link linkedin" title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/thiago-eclis/" class="team-link linkedin" title="LinkedIn">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
-                        <a href="#" class="team-link github" title="GitHub">
+                        <a href="https://github.com/Thiago-Eclis" class="team-link github" title="GitHub">
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <a href="#" class="team-link whatsapp" title="WhatsApp">
+                        <a href="https://wa.me/5515998123623" class="team-link whatsapp" title="WhatsApp">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
                     </div>
@@ -778,20 +800,22 @@
 
                 <!-- Maick -->
                 <div class="team-card">
-                    <div class="team-avatar">MC</div>
+                    <div class="team-avatar">
+                        <img src="maick.png" alt="Maick Cruz">
+                    </div>
                     <div class="team-name">Maick Cruz</div>
                     <div class="team-role">Arquiteto de Sistemas & Product Owner</div>
                     <div class="team-links">
-                        <a href="#" class="team-link email" title="Email">
+                        <a href="maickk.cruz@gmail.com" class="team-link email" title="Email">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
-                        <a href="#" class="team-link linkedin" title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/maickcruz/" class="team-link linkedin" title="LinkedIn">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
-                        <a href="#" class="team-link github" title="GitHub">
+                        <a href="https://github.com/MaickCruz?tab=overview&from=2026-05-01&to=2026-05-22" class="team-link github" title="GitHub">
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <a href="#" class="team-link whatsapp" title="WhatsApp">
+                        <a href="https://wa.me/5515996681863" class="team-link whatsapp" title="WhatsApp">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
                     </div>
@@ -833,8 +857,8 @@
             </p>
             <p style="margin-top: 12px; font-size: 12px;">
                 <a href="https://psicoupx.lovable.app/" target="_blank">Site</a> · 
-                <a href="https://github.com/caiquecanavan" target="_blank">GitHub</a> · 
-                <a href="https://www.figma.com/design/3oOWxd28rKfPUSrdmEYwSE/Sem-t%C3%ADtulo?node-id=0-1&t=lEHc9n2AODBS7Igg-1" target="_blank">Figma</a>
+                <a href="https://github.com/MaickCruz/PSICO-site" target="_blank">GitHub</a> · 
+                <a href="https://www.figma.com/design/KXAHvX5hQpijqfW9PI710b/Psico-site?node-id=0-1&p=f" target="_blank">Figma</a>
             </p>
         </div>
 
